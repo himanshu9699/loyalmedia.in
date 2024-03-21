@@ -1,73 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Loyalmedia.in</title>
-</head>
-<body>
-    <section class="h-screen bg-gray-800 py-20">
-        <div class="max-w-5xl mx-auto px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-            <h2 class="text-4xl lg:text-5xl text-white font-bold mb-8">Our Website is Coming Soon</h2>
-            <p class="text-gray-400 text-lg lg:text-xl leading-relaxed mb-12">
-                Stay tuned for updates and get ready for an extraordinary experience!
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-4 p-2">
-                <div class="bg-white rounded-full px-6 py-2 min-w-[120px]">
-                    <div id="days" class="font-bold text-xl text-gray-800"></div>
-                    <div class="text-xs uppercase text-gray-500">days</div>
-                </div>
-                <div class="bg-white rounded-full px-6 py-2 min-w-[120px]">
-                    <div id="hours" class="font-bold text-xl text-gray-800"></div>
-                    <div class="text-xs uppercase text-gray-500">hours</div>
-                </div>
-                <div class="bg-white rounded-full px-6 py-2 min-w-[120px]">
-                    <div id="minutes" class="font-bold text-xl text-gray-800"></div>
-                    <div class="text-xs uppercase text-gray-500">minutes</div>
-                </div>
-                <div class="bg-white rounded-full px-6 py-2 min-w-[120px]">
-                    <div id="seconds" class="font-bold text-xl text-gray-800"></div>
-                    <div class="text-xs uppercase text-gray-500">seconds</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <script>
-        // Set the date we're counting down to
-            var countDownDate = new Date("March 16, 2024 00:00:00").getTime();
-    
-            // Update the countdown every 1 second
-            var x = setInterval(function() {
-    
-                // Get today's date and time
-                var now = new Date().getTime();
-    
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-    
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-                // Display the result in the corresponding elements
-                document.getElementById("days").textContent = days + "d";
-                document.getElementById("hours").textContent = hours + "h";
-                document.getElementById("minutes").textContent = minutes + "m";
-                document.getElementById("seconds").textContent = seconds + "s";
-    
-    
-                // If the count down is over, write some text 
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-    </script>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Himanshu Agrawal - Portfolio Website</title>
+		
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Css Fils -->
+		<link rel="stylesheet" href="./assets/animate.css">
+		<link rel="stylesheet" href="./assets/flaticon-31.css">
+		
+		<link rel="stylesheet" href="./assets/owl.carousel.css">
+		<link rel="stylesheet" href="./assets/typer.css">
+		<link rel="stylesheet" href="./assets/slick-theme.css">
+		<link rel="stylesheet" href="./assets/slick.css">
+		<link rel="stylesheet" href="./assets/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/style-31.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		
+		<script src="https://kit.fontawesome.com/d59710d54e.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+
+	<body class="apihu-port-body" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+
+		<div class="apihu-port-body-overlay"></div>
+
+		<!-- Preloader-->
+		<div class="loading-preloader" style="display: none;">
+			<div id="loading-preloader">
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+				<div class="line_shape"></div>
+			</div>
+		</div>
+		<!-- Preloader End -->
+
+		<!-- ScrollTop Button -->
+        <a href="#" class="apihu-port-scroll-top" style="display: none;"><i class="fas fa-chevron-up"></i></a>
+
+		<!-- Header Start -->
+		<header class="apihu-port-header-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-2 col-3">
+						<div class="apihu-port-logo">
+							<!-- <img src="./assets/ar_logo.png" style="height: 40px; width: 100px; " alt="SaaSio Portfolio"> -->
+						</div>
+					</div>
+					<div class="col-xl-8 d-none d-lg-block text-center col-lg-8">
+						<div class="apihu-port-main-navigation">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#apihu-port-resume">About</a></li>
+								<li><a href="#apihu-port-feature">Services</a></li>
+								<!-- <li><a href="#apihu-port-pricing-area">Qualifications</a></li> -->
+								<li><a href="#contact-details">Contact</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-10 col-9 text-right">
+						<div class="apihu-port-header-cta">
+							<a href="https://instagram.com/loyalmedia.in">Let's Chat <i class="fas fa-comment-dots"></i></a>
+						</div>
+
+						<div class="apihu-port-mobile-menu-hamburger">
+							<a href="#"><i class="fas fa-bars"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Mobile Menu -->
+		<div class="apihu-port-mobile-menu">
+			<a href="#" class="apihu-port-menu-close"><i class="fas fa-times"></i></a>
+			<a href="#" class="apihu-port-logo-wrapper"><img src="./assets/white-logo.png" alt=""></a>
+			<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#apihu-port-resume">About</a></li>
+								<li><a href="#apihu-port-feature">Services</a></li>
+								<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
+								<li><a href="#contact-details">Contact</a></li>
+			</ul>
+		</div>
+		<!-- Mobile Menu End -->
+
+		<!-- Hero Start -->
+		
+		<section class="apihu-port-hero-area" id="apihu-port-hero">
+
+			<!-- Hero bg shape -->
+
+			<!-- <img class="apihu-port-hero-shape-1" src="./assets/hero-shape.png" alt="Shape">
+			<img class="apihu-port-hero-shape-2" src="./assets/python.png" alt="Shape">
+			<img class="apihu-port-hero-shape-3" src="./assets/flutter.png" alt="Shape">
+			<img class="apihu-port-hero-shape-4" src="./assets/html.png" alt="Shape">
+			<img class="apihu-port-hero-shape-5" src="./assets/sql.png" alt="Shape"> -->
+				
+			
+			
+			<!-- <span class="apihu-port-hero-side-style-text">LoyalMedia</span> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8 col-lg-8">
+						<div class="apihu-port-hero-left">
+							<p class="apihu-port-hero-subtitle wow slideInDown" style="visibility: visible; animation-name: slideInDown;"></p>
+							<h1 class="apihu-port-hero-title cd-headline clip is-full-width">Hi there!<br>We Are<br> Loyal Media<span class="apihu-port-hero-title-color cd-words-wrapper" style="width: 67.5582px; overflow: hidden;">
+							
+							
+								
+							</span>
+								<span class="apihu-port-hero-title-small-text"><div class="type">
+    <p>We Are Into <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+  </div></span> 
+							</h1>
+							
+							<ul class="apihu-port-hero-btn-wrap wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+								<li><a class="apihu-port-primary-btn apihu-port-hero-btn-gradient" href="mailto:info@loyalmedia.in">Contact Me +</a></li>
+								<li><a class="apihu-port-secondary-btn apihu-port-hero-btn-white" href="#apihu-port-resume">About Me <i class="fa-solid fa-arrow-down"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4">
+						<!-- hero area social -->
+						<div class="apihu-port-hero-social">
+							<ul>
+								<li><a href="mailto:info@loyalmedia.in"><i class="fa fa-envelope"></i></a></li>
+								<li><a href="https://chat.whatsapp.com/HaCqQk0yY3dJiNtazQYyXh"><i class="fa fa-whatsapp"></i></a></li>
+								<li><a href="https://www.instagram.com/loyalmedia.in"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+						<div class="apihu-port-hero-right wow slideInRight" style="visibility: visible; animation-name: slideInRight;">
+							<div class="apihu-port-hero-right-img">
+								<!-- <img src="./assets/landing_image.png" style="width: 500px; height: 500px;" alt="Hero Area"> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hero End -->
+
+
+		<!-- slider -->
+
+		<section class="section slider-section">
+  <div class="container slider-column">
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="./assets/sonyliv-logo-freelogovectors.net_-400x400.png" alt="Swiper">
+        <img class="swiper-slide" src="./assets/amazon-prime_video_logo-freelogovectors.net_.png" alt="Swiper">
+        <img class="swiper-slide" src="./assets/disneyplus-hotstar-logo-freelogovectors.net_-400x400.png" alt="Swiper">
+        <img class="swiper-slide" src="./assets/6071653.jpeg" alt="Swiper">
+        <img class="swiper-slide" src="./assets/mx-player-logo.png" alt="Swiper">
+        <img class="swiper-slide" src="./assets/oneplus_logo-freelogovectors.net_-640x474.png" alt="Swiper">
+		<img class="swiper-slide" src="./assets/udaan-logo-freelogovectors.net_-400x400.png" alt="Swiper">
+		<img class="swiper-slide" src="./assets/winmatchlogo1650c20976588d.png" alt="Swiper">
+		<img class="swiper-slide" src="./assets/zee5-logo-freelogovectors.net_-400x397.png" alt="Swiper">
+      </div>
+      <!-- <span class="swiper-pagination"></span>
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-button-next"></span> -->
     </div>
-</body>
-</html>
+  </div>
+</section>
+
+		<!-- slider ends -->
+
+		<!--Swiper-->
+
+		<!-- <div class="swiper"> -->
+			<!-- Additional required wrapper -->
+			<!-- <div class="swiper-wrapper"> -->
+			  <!-- Slides -->
+			  <!-- <div class="swiper-slide">Slide 1</div> -->
+			  <!-- <div class="swiper-slide">Slide 2</div> -->
+			  <!-- <div class="swiper-slide">Slide 3</div> -->
+			  ...
+			<!-- </div> -->
+			<!-- If we need pagination -->
+			<!-- <div class="swiper-pagination"></div> -->
+		  
+			<!-- If we need navigation buttons -->
+			<!-- <div class="swiper-button-prev"></div> -->
+			<!-- <div class="swiper-button-next"></div> -->
+		  
+			<!-- If we need scrollbar -->
+			<!-- <div class="swiper-scrollbar"></div> -->
+		  <!-- </div> -->
+
+		<!-- swiper ends -->
+
+		<!-- About Start -->
+		<section class="apihu-port-about-area" id="apihu-port-resume">
+			<img src="./assets/about-shape-1.png" alt="" class="apihu-port-about-shape">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6">
+						<div class="apihu-port-about-left wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">
+							<div class="apihu-port-about-img">
+								<img src="./assets/left_python.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6">
+						<div class="apihu-port-about-right">
+							<h3 class="apihu-port-about-subtitle">About LoyalMedia</h3>
+							<h2 class="apihu-port-about-title">Growing Towards Digital Marketing.</h2>
+							<p class="apihu-port-about-text" style="text-align:justify">
+								We specialize in elevating brands through strategic promotion and digital solutions, offering a comprehensive suite of services encompassing brand promotion, web development, song promotion, influencer marketing, and logo promotion. With a team of dedicated experts, we craft tailored strategies to meet your specific goals, whether you're seeking to increase brand recognition, drive online sales, or amplify your music career. In today's fast-paced digital landscape, having a strong online presence is essential, and our web development services offer sleek and responsive designs that captivate audiences and drive engagement. Additionally, our expertise in influencer marketing ensures that your brand connects with the right audience through authentic and impactful collaborations. Together, we'll navigate the digital realm and position your brand for success.
+								</p>
+							<div class="apihu-port-about-expertise">
+								<ul class="nav nav-pills" id="pills-tab" role="tablist">
+									<li class="nav-item">
+									  <a class="nav-link active show" id="pills-home-tab" href="mailto:info@loyalmedia.in" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa fa-envelope"></i> E-Mail</a>
+									</li>
+									<li class="nav-item">
+									  <a class="nav-link active show" id="pills-profile-tab" href="https://chat.whatsapp.com/HaCqQk0yY3dJiNtazQYyXh" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa fa-whatsapp"></i> whatsapp</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active show" id="pills-profile-tab" href="https://www.instagram.com/loyalmedia.in" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa fa-instagram"></i> Instagram</a>
+									</li>
+									
+								  </ul>
+							
+								  <!-- <div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+											<ul>
+												<li>
+													<span class="apihu-port-expertise-title">Worked with Tkinter, OpenCv, PyAudio and StreamLit</span>
+													<span class="apihu-port-expertise-text">Useful Libraries in Python</span>
+												</li>
+												<li>
+													<span class="apihu-port-expertise-title">Currently working with <font style="color: blue;">Flutter (A framework by Google)</font></span>
+													<span class="apihu-port-expertise-text">Soon going to gain some experience in it.</span>
+												</li>
+												<li>
+													<span class="apihu-port-expertise-title">I am into Technical content creation.</span>
+													<span class="apihu-port-expertise-text">Check out my blogging site: <a href="https://foxstack.blogspot.com/" style="text-decoration: none; color: #e70820;">FoxStack</a></span>
+												</li>
+											</ul>
+										</div> -->
+										
+							<!--
+							<div class="apihu-port-about-btn">
+								<a href="https://html.themexriver.com/Saasio/index-31.1.html#">Download CV <i class="fas fa-download"></i></a>
+							</div>
+							-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About End -->
+
+		<!-- Service Start -->
+		<section class="apihu-port-service-area" id="apihu-port-feature">
+			<img class="apihu-port-service-shape-1" src="./assets/service-shape-1.png" alt="Service Shape">
+			<img class="apihu-port-service-shape-2" src="./assets/service-shape-2.png" alt="Service Shape">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 text-center">
+						<div class="apihu-port-section-heading">
+							<p class="apihu-port-section-subtitle">We are working on more and more services</p>
+							<h2 class="apihu-port-section-title">Our Range of <span class="apihu-port-section-title-color">Expertise </span>for you</h2>
+						</div>
+					</div>
+				</div>
+				<div id="popup-box" class="modal">
+					<div class="content" style="font-family: Roboto, sans-serif;">
+						<p>
+							• Create a transformative website powered by AI transformers that offers personalized solutions based on teachings from a holy book.<br>
+							<br>• Utilizing advanced natural language processing, users can seek guidance for daily challenges, receive relevant verses, and access a community platform for support.<br>
+							<br>• The website promotes spiritual growth, ethical decision-making, and a deeper connection to the teachings, fostering a positive impact on users’ lives.<br>
+						</p>
+						<!-- <b>
+							<p>Never Give Up !</p>
+						</b> -->
+						<a href="#apihu-port-feature" class="box-close">
+							×
+						</a>
+					</div>
+				</div>
+
+				<div id="popup-box2" class="modal">
+					<div class="content" style="font-family: Roboto, sans-serif;">
+						<p>
+							• Implemented a computer vision-based face recognition system to automate attendance tracking in educational
+							or corporate settings.<br>
+							<br>• Employed Python programming language and popular libraries like OpenCV and dlib to develop a robust
+							solution for recognizing individuals based on facial features.
+						</p>
+						<!-- <b>
+							<p>Never Give Up !</p>
+						</b> -->
+						<a href="#apihu-port-feature" class="box-close">
+							×
+						</a>
+					</div>
+				</div>
+
+				<div id="popup-box3" class="modal">
+					<div class="content" style="font-family: Roboto, sans-serif;">
+						<p>
+							• The blood donation locator ensures accurate and real-time identification of potential donors within a specified geographic area, streamlining the process of connecting donors with those in need.<br><br>
+							• The locator features a user-friendly interface, making it easy for both donors and recipients to navigate and engage with the platform. This enhances accessibility and encourages more individuals to participate in blood donation initiatives.
+						</p>
+						<!-- <b>
+							<p>Never Give Up !</p>
+						</b> -->
+						<a href="#apihu-port-feature" class="box-close">
+							×
+						</a>
+					</div>
+				</div>
+
+				<div id="popup-box4" class="modal">
+					<div class="content" style="font-family: Roboto, sans-serif;">
+						<p>
+							• Implemented the system using modern web technologies, such as HTML, CSS, JavaScript, and PHP, to create a
+							user-friendly interface.<br><br>
+							• Developed modules to manage student records, room allocations, and hostel fee payments efficiently, reducing
+							manual paperwork. <br>
+						</p>
+						<!-- <b>
+							<p>Never Give Up !</p>
+						</b> -->
+						<a href="#apihu-port-feature" class="box-close">
+							×
+						</a>
+					</div>
+				</div>
+				
+
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+							<div class="apihu-port-service-icon-box">
+								<i class="fa-solid fa-chart-bar"></i>
+							</div>
+							<h3 class="apihu-port-single-service-title">Brand Building</h3>
+							<!-- <p class="apihu-port-single-service-text">A solution is given to the daily life problem from holy book. 
+							</p>
+							<a class="apihu-port-single-service-btn" href="#popup-box">Read More <i class="fas fa-plus"></i></a> -->
+							<!-- <span class="popuptext" id="myPopup">A Simple Popup!</span> -->
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+							<div class="apihu-port-service-icon-box">
+								<i class="fa fa-laptop"></i>
+							</div>
+							<h3 class="apihu-port-single-service-title">Web Development</h3>
+							<!-- <p class="apihu-port-single-service-text">This software is used to recognizes face of the person and marks the attendance.
+								</p>
+							<a class="apihu-port-single-service-btn" href="#popup-box2">Read More <i class="fas fa-plus"></i></a> -->
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+							<div class="apihu-port-service-icon-box">
+								<i class="fa-solid fa-music"></i>
+							</div>
+							<h3 class="apihu-port-single-service-title">Song Promotion</h3>
+							<!-- <p class="apihu-port-single-service-text">
+								This app facilitates the connection between individuals willing to donate blood, plasma, and organs, ensuring a seamless match between donors and recipients in need.	
+							</p>
+							<a class="apihu-port-single-service-btn" href="#popup-box3">Read More <i class="fas fa-plus"></i></a> -->
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+							<div class="apihu-port-service-icon-box">
+								<i class="fa-solid fa-user"></i>
+							</div>
+							<h3 class="apihu-port-single-service-title">Inluencer Marketing</h3>
+							<!-- <p class="apihu-port-single-service-text">This website serves as a platform for students and the management team to efficiently manage hostel-related tasks and responsibilities. </p>
+							<a class="apihu-port-single-service-btn" href="#popup-box4">Read More <i class="fas fa-plus"></i></a> -->
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row">
+					<div class="col-xl-12 text-center">
+						<div class="apihu-port-service-load-more-btn">
+							<a href="#">Load More <i class="fas fa-plus"></i></a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</section>
+		<!-- Service End -->
+
+		<!-- CTA Start -->
+		<section class="apihu-port-cta-area">
+			<img class="apihu-port-cta-shape" src="./assets/cta-bg.png" alt="Cta shape">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="apihu-port-cta-content-wrap">
+
+							<img class="apihu-port-cta-container-shape" src="./assets/cta-bg-shape.png" alt="Cta container shape">
+
+							<div class="row">
+								<div class="col-xl-8 col-lg-8">
+									<div class="apihu-port-cta-content-text">
+										<p>Get In Touch</p>
+										<h2>Contact us for <b>Growing</b> your <b>Brand</b></h2>
+										<a href="#contact-details">Contact Me +</a>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4">
+									<div class="apihu-port-cta-content-img">
+										<img src="./assets/cta-right.png" alt="Call to action area">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CTA End -->
+
+		
+		<!-- Contact Start -->
+		<section class="apihu-port-contact-area" id="contact-details">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 text-left">
+						<div class="apihu-port-section-heading">
+							<p class="apihu-port-section-subtitle">Contact Me</p>
+							<h2 class="apihu-port-section-title">Get in Touch With Me</h2>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="row">
+					
+					<div class="col-xl-6">
+						<div class="apihu-port-contact-right">
+							<div class="apihu-port-contact-right-img">
+								<img src="./assets/contact-illust.png" alt="Contact Right">
+							</div>
+							<div class="apihu-port-contact-right-content">
+								
+								<div class="apihu-port-contact-text">
+									<span class="apihu-port-contact-number"><a href="mailto:info@loyalmedia.in">MailTo: <font style="font-weight: bold; color: #e70280;">info@loyalmedia.in</font></a></span>
+									<span class="apihu-port-contact-email"><a href="https://instagram.com/loyalmedia.in">DM on Instagram: <font style="font-weight: bold; color: #e70280;">loyalmedia.in</font></a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contact End -->
+		
+		
+		
+
+		<!-- Footer Start -->
+		<!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <!-- <img src="./assets/footer_ar_logo.png" style="height: 60px;width: 380px;" alt="footer logo"> -->
+            <p class="text-justify">Thank you for visiting our Website. We would really be glad to collaborate with you. Message me on my Instagram handle or mail me.</p><p>Make your brand more popular with us.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Contact Info</h6>
+            <ul class="footer-links">
+              <li><i class="fa-solid fa-phone" style="color: yellow;"></i>  +91 7459942787</li>
+              <li><i class="fa-solid fa-envelope" style="color: yellow;"></i>  info@loyalmedia.in</li>
+              <li><i class="fa-solid fa-location-pin" style="color: yellow;"></i>  Delhi, India</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+								<li><a href="#apihu-port-resume">About</a></li>
+								<li><a href="#apihu-port-feature">Services</a></li>
+								<!-- <li><a href="#apihu-port-pricing-area">Qualifications</a></li> -->
+								<li><a href="#contact-details">Contact</a></li
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Designed with <i class="fa fa-heart pulse" style="color: #e90606;"></i> by
+         <a href="https://www.linkedin.com/in/himanshu9699/">Himanshu Agrawal</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="github" href="https://chat.whatsapp.com/HaCqQk0yY3dJiNtazQYyXh"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a class="instagram" href="https://instagram.com/loyalmedia.in"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="mailto:info@loyalmedia.in"><i class="fa fa-envelope"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+	  <!-- <div id="popup-box" class="modal">
+        <div class="content">
+            <h1 style="color: green;">
+                Hello GeeksForGeeks !
+            </h1>
+            <b>
+                <p>Never Give Up !</p>
+            </b>
+            <a href="#" class="box-close">
+                ×
+            </a>
+        </div> -->
+</footer>
+		<!-- Footer End -->
+
+        <!-- For Js Library -->
+		<script src="./assets/jquery.js.download"></script>
+		<script src="./assets/bootstrap.min.js.download"></script>
+		<script src="./assets/owl.js.download"></script>
+		<script src="./assets/slick.js.download"></script>
+		<script src="./assets/waypoints.min.js.download"></script>
+		<script src="./assets/wow.min.js.download"></script>
+		<script src="./assets/isotope.pkgd.js.download"></script>
+		<script src="./assets/typer-new.js.download"></script>
+		<script src="./assets/appear.js.download"></script>
+		<script src="./assets/progress-bar.js.download"></script>
+		<script src="./assets/scripts-31.js.download"></script>
+
+		<script src="./assets/type.js"></script>
+		<!-- <script>
+			myButton.addEventListener("click", function () {
+				myPopup.classList.add("show");
+			});
+			closePopup.addEventListener("click", function () {
+				myPopup.classList.remove("show");
+			});
+			window.addEventListener("click", function (event) {
+				if (event.target == myPopup) {
+					myPopup.classList.remove("show");
+				}
+			});
+		</script> -->
+		
+
+	
+<div id="imageDownloaderSidebarContainer"><div class="image-downloader-ext-container"><div tabindex="-1" class="b-sidebar-outer"><!----><div id="image-downloader-sidebar" tabindex="-1" role="dialog" aria-modal="false" aria-hidden="true" class="b-sidebar shadow b-sidebar-right bg-light text-dark" style="width: 500px; display: none;"><!----><div class="b-sidebar-body"><div></div></div><!----></div><!----><!----></div></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
